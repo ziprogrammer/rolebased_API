@@ -17,7 +17,6 @@ router.post("/register-user", async (req, res) => {
 router.post("/register-admin", async (req, res) => {
   await userRegister(req.body, "admin", res);
 });
-
 // Super Admin Registration Route
 router.post("/register-super-admin", async (req, res) => {
   await userRegister(req.body, "superadmin", res);
